@@ -1,6 +1,4 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -8,8 +6,7 @@ html {
     font-size: 62.5%;
 }
 
-body,
-html {
+body {
     font-family: "Open Sans", sans-serif;
     font-size: 1.6rem;
 }
@@ -24,11 +21,12 @@ html {
     --primary-color: #212832;
     --secondary-color: #7264d6;
     --font-primary: "Open Sans;";
+    --gray-color: #696d76;
 }
 
 .btn {
     display: inline-block;
-    min-width: 149px;
+    min-width: 15rem;
     height: 58px;
     background: transparent;
     border-radius: 8px;
@@ -37,8 +35,24 @@ html {
     padding: 0 16px;
     text-align: center;
     font-family: var(--font-primary);
+    text-decoration: none;
+    color: white;
 }
 
 .btn.btn--primary {
     background: var(--primary-color);
+}
+
+.btn.btn--secondary {
+    width: 11.3rem;
+    line-height: 5.2rem;
+    background: var(--primary-color);
+}
+
+.text {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--gray-color);
+    text-decoration: none;
 }

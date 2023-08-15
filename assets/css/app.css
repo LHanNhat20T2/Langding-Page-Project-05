@@ -1,0 +1,66 @@
+/* ============ header =============== */
+.header {
+    padding-top: 4.2rem 0;
+}
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+}
+.header__logo {
+    display: flex;
+    align-items: center;
+    column-gap: 0.8rem;
+    text-decoration: none;
+}
+
+.header__logo-name {
+    color: black;
+    font-weight: 700;
+}
+
+.header__nav {
+    margin-left: 7rem;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__link {
+    padding: 0 2.4rem;
+    position: relative;
+}
+
+.active-link::after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 4.8rem);
+    height: 0.2rem;
+    bottom: 0;
+    left: 2.4rem;
+    border-radius: 999px;
+    background: var(--secondary-color);
+    transition: color 0.9s ease-in;
+}
+
+.nav__link:hover {
+    text-shadow: 0 0 currentColor;
+    color: var(--primary-color);
+}
+
+.header__cta {
+    display: flex;
+    align-items: center;
+    column-gap: 2.8rem;
+}
+
+.header__login {
+    color: var(--primary-color);
+    font-weight: 600;
+}
