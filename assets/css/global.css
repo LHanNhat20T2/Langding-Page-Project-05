@@ -22,12 +22,52 @@ body {
     --secondary-color: #7264d6;
     --font-primary: "Open Sans;";
     --gray-color: #696d76;
+    --black--medium-color: #31456a;
+    --blue-color-1: #4ab5e3;
+    --red-color: #da6464;
+    --green-color: #439f90;
+}
+
+.heading {
+    font-family: var(--font-primary);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 7rem;
+    color: var(--primary-color);
+}
+
+.hightlight {
+    color: var(--secondary-color);
+}
+
+.sub-heading {
+    position: relative;
+    padding-left: 3rem;
+}
+
+.sub-heading::before {
+    content: "";
+    position: absolute;
+    width: 1.8rem;
+    height: 0.2rem;
+    flex-shrink: 0;
+    top: 50%;
+    left: 0;
+    background-color: var(--gray-color);
+    transform: translateY(-50%);
+}
+
+.desc {
+    font-family: var(--font-primary);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: var(--gray-color);
 }
 
 .btn {
     display: inline-block;
     min-width: 15rem;
-    height: 58px;
     background: transparent;
     border-radius: 8px;
     font-size: 1.6rem;
@@ -37,16 +77,20 @@ body {
     font-family: var(--font-primary);
     text-decoration: none;
     color: white;
+    border: none;
+    outline: none;
 }
 
 .btn.btn--primary {
+    width: 11.3rem;
+    line-height: 5.2rem;
     background: var(--primary-color);
 }
 
 .btn.btn--secondary {
-    width: 11.3rem;
-    line-height: 5.2rem;
-    background: var(--primary-color);
+    width: 14.9rem;
+    height: 5.8rem;
+    background: var(--secondary-color);
 }
 
 .text {
