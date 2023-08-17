@@ -42,6 +42,7 @@ body {
 }
 
 .heading.lv2 {
+    margin-top: 1.2rem;
     font-size: 4rem;
     line-height: 5rem;
 }

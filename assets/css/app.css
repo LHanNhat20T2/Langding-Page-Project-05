@@ -67,7 +67,7 @@
 }
 
 .hero {
-    padding-top: 3.4rem;
+    padding: 3.4rem 0 3rem;
 }
 
 .hero__inner {
@@ -83,7 +83,7 @@
 }
 
 .hero__heading {
-    margin: 1.2rem 0 2rem;
+    margin-bottom: 2rem;
     width: 50rem;
 }
 
@@ -227,7 +227,7 @@
 }
 
 .work {
-    padding: 10rem 0;
+    padding: 7rem 0;
     margin: 6rem 0;
 }
 
@@ -291,7 +291,7 @@
 }
 
 .work__heading {
-    margin: 1.2rem 0 7rem;
+    margin-bottom: 7rem;
 }
 
 .work__title {
@@ -338,4 +338,141 @@
     font-family: var(--font-secondary);
     font-size: 1.2rem;
     font-weight: 400;
+}
+
+.feature {
+    padding: 3rem 0;
+}
+
+.feature__inner {
+    display: flex;
+    column-gap: 13rem;
+}
+
+.feature__content {
+    width: 35%;
+    flex-shrink: 0;
+}
+
+.feature_desc {
+    margin-top: 2rem;
+}
+.feature__body {
+    margin: 2.8rem 0 3.8rem;
+}
+
+.feature__title {
+    display: block;
+    color: var(--black-color-2);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem;
+    position: relative;
+    padding-left: 2.4rem;
+}
+
+.feature__title::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: var(--secondary-color);
+}
+
+.feature--btn {
+    min-width: 14.9rem;
+    line-height: 5.8rem;
+}
+
+.feature__card-image {
+    position: relative;
+}
+
+.feature__card-image img {
+    display: block;
+}
+
+.feature__card-summary {
+    padding: 2.3rem 1.3rem;
+    position: absolute;
+    right: -8.8rem;
+    top: -4.8rem;
+    width: 27.6rem;
+    height: 8.6rem;
+    border-radius: 1.2rem;
+    background: #fff;
+    box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.feature__summary-icon {
+    width: 4rem;
+    height: 4rem;
+}
+
+.feature__summary-sendMoneyWrap {
+    padding: 0 6.7rem 0 1.4rem;
+}
+
+.feature__summary-name {
+    color: var(--primary-color);
+    font-family: var(--font-secondary);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.feature__summary-price {
+    color: var(--primary-color);
+    text-align: right;
+    font-family: var(--font-secondary);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.feature__summary-payment {
+    margin-top: 0.4rem;
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--gray-color);
+}
+
+.feature__summary-date {
+    margin-top: 0.4rem;
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--gray-color);
+    text-align: right;
+}
+
+.feature__card-income {
+    position: absolute;
+    right: -8.8rem;
+    bottom: -5.5rem;
+    padding: 1.5rem;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 1.6rem;
+    background: var(--green-color);
+}
+
+.feature__income-name {
+    margin: 1.4rem 0 0.6rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.feature__income-price {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
 }
