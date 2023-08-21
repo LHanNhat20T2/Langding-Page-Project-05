@@ -566,7 +566,7 @@
 
 .client {
     margin-top: 3rem;
-    padding-top: 7rem;
+    padding: 7rem 0;
 }
 
 .client__box {
@@ -720,4 +720,243 @@
     background: var(--secondary-color);
     border: none;
     cursor: default;
+}
+
+/* ================ Blog =============== */
+.blog {
+    margin-top: 2rem;
+    padding: 7rem 0;
+}
+
+.blog__desc {
+    margin-top: 1.8rem;
+    width: 44rem;
+}
+
+.blog__btn {
+    min-width: 12.3rem;
+    line-height: 5.8rem !important;
+}
+
+.blog__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog__list {
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 3rem;
+}
+
+.blog-item {
+    padding: 2.8rem;
+    border-radius: 1.2rem;
+    border: 1px solid var(--gray-color-3);
+    background: white;
+    display: flex;
+    align-items: center;
+    column-gap: 2.2rem;
+}
+
+.blog-item:hover {
+    border: none;
+    background: #fff;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.07);
+}
+
+.blog-item:hover .blog__link {
+    color: var(--secondary-color);
+}
+
+.blog__content-date {
+    color: var(--gray-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+}
+
+.blog__content-title {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem;
+    margin-top: 1rem;
+}
+
+.blog__link {
+    margin-top: 2rem;
+    color: var(--gray-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    text-decoration: none;
+}
+
+/* ========== App ========== */
+.app {
+    margin-top: 2rem;
+    padding: 7rem 0;
+}
+
+.app__inner {
+    padding: 10rem 38rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2.4rem;
+    background: #7264d6;
+    position: relative;
+}
+
+.app .sub-heading,
+.app__desc {
+    color: white;
+}
+
+.app .sub-heading::before {
+    background: white;
+}
+
+.app__heading {
+    margin-top: 1.2rem;
+    color: white;
+}
+
+.app__desc {
+    margin-top: 1.8rem;
+    text-align: center;
+}
+
+.app__download {
+    margin-top: 3.8rem;
+    display: flex;
+    column-gap: 1.6rem;
+    align-items: center;
+}
+
+.app__decor {
+    position: absolute;
+    content: "";
+    background-image: url("/assets/image/start.png");
+    display: inline-block;
+    width: 15rem;
+    height: 15rem;
+}
+
+.app__decor:first-of-type {
+    top: 4.9rem;
+    left: 11.2rem;
+}
+
+.app__decor:nth-of-type(2) {
+    top: 4.9rem;
+    right: 11.2rem;
+}
+
+.app__decor:nth-of-type(3) {
+    bottom: 4.9rem;
+    left: 16.6rem;
+}
+.app__decor:last-of-type {
+    bottom: 4.9rem;
+    right: 16.6rem;
+}
+
+/* =============== footer ============ */
+.footer {
+    margin-top: 3rem;
+    background-color: var(--footer-bg);
+}
+
+.footer__inner {
+    padding: 10rem 0 2.8rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 3fr;
+    column-gap: 8rem;
+}
+
+.footer__col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    column-gap: 0.3rem;
+}
+
+.footer__email,
+.footer__phone {
+    color: #6a6e78;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem;
+    text-decoration-line: underline;
+    margin-top: auto;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.footer__item:not(:last-child) {
+    margin-bottom: 0.3rem;
+}
+
+.footer__link,
+.footer__desc {
+    color: var(--gray-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem;
+    text-decoration: none;
+}
+
+.footer__desc {
+    margin: 2.8rem 0 4.8rem;
+}
+
+.footer__form {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.footer__form-input {
+    padding: 1.2rem;
+    width: 27rem;
+    height: 5.2rem;
+    border-radius: 0.6rem;
+    border: 1px solid var(--gray-color-6);
+    border-radius: 0.6rem;
+    outline: none;
+    font-family: var(--font-primary);
+    color: var(--gray-color-6);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    background: transparent;
+}
+
+.footer__btn {
+    width: 11.3rem;
+    height: 5.2rem;
+    border-radius: 0.6rem;
+    background: var(--secondary-color) !important;
+}
+
+.footer__authorWrap {
+    background-color: var(--secondary-color);
+}
+
+.footer__author {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    padding: 2.8rem 0;
+    color: white;
 }

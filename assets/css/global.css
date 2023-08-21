@@ -31,12 +31,16 @@ body {
     --green-color: #439f90;
     --gray-color-3: #dfe2e8;
     --gray-color-4: #9b9fab;
+    --gray-color-5: #6a6e78;
+    --footer-bg: #fafbff;
+    --gray-color-6: #8e919a;
 }
 
 .heading {
     font-family: var(--font-primary);
     font-weight: 700;
     color: var(--primary-color);
+    text-transform: capitalize;
 }
 
 .heading.lv1 {
@@ -48,6 +52,13 @@ body {
     margin-top: 1.2rem;
     font-size: 4rem;
     line-height: 5rem;
+}
+
+.heading.lv3 {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: 600;
+    margin-bottom: 2.4rem;
 }
 
 .hightlight {
@@ -93,6 +104,10 @@ body {
     color: white;
     border: none;
     outline: none;
+}
+
+.btn:hover {
+    opacity: 0.8;
 }
 
 .btn.btn--primary {
