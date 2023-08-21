@@ -25,9 +25,12 @@ body {
     --gray-color: #696d76;
     --black--medium-color: #31456a;
     --black-color-2: #212832;
+    --black-color-3: #070052;
     --blue-color-1: #4ab5e3;
     --red-color: #da6464;
     --green-color: #439f90;
+    --gray-color-3: #dfe2e8;
+    --gray-color-4: #9b9fab;
 }
 
 .heading {
